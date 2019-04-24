@@ -1,0 +1,40 @@
+
+/*
+ * tabbar_                   主视图相关
+ * xxx_viewcontroller        控制器相关
+ * xxx_viewcontroller_title  控制器相关_title
+ * xxx_view                  试图相关
+ * xxx_model                 模型相关
+ * xxx_alert_sure            提示——确定
+ * xxx_alert_sure            提示——取消
+ * xxx_alert_message         提示--正文
+ */
+
+"tabbar_forum" = "团队";
+"tabbar_task" = "转诊";
+"tabbar_me" = "我的";
+"tabbar_message" = "消息";
+
+"login_viewcontroller_title" = "登   录";
+"login_viewcontroller_remark" = "未支持的手机号将自动注册成为直医医生帐号";
+"login_viewcontroller_telephonelabel" = "手机号";
+"login_viewcontroller_telephoneplacehoder" = "请输入手机号";
+"login_viewcontroller_valicodeplacehoder" = "请输入验证码";
+"login_viewcontroller_valicode" = "验证码";
+"login_viewcontroller_postvliacode" = "获取验证码";
+
+/*
+
+/*
+ *  net_error          网络状态异常相关
+ *  net_data           网络数据相关
+ */
+
+"net_error" = "您的网络好像有问题";
+
+/*
+ * teleph               验证手机号码相关
+ * cevar                验证证件号码相关
+ * account              验证账号相关
+ * psd                  验证密码相关
+ */

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="55" id="KGk-i7-Jjw" customClass="AgentDetailTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="slm-4D-387">
+                        <rect key="frame" x="23" y="68" width="28" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="28" id="Meu-Mt-5kA"/>
+                            <constraint firstAttribute="height" constant="28" id="Tyd-8Y-AFW"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1I9-ca-KHu">
+                        <rect key="frame" x="36" y="4" width="1" height="53"/>
+                        <color key="backgroundColor" red="0.17442491319444445" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="9ac-8n-D8r"/>
+                            <constraint firstAttribute="height" constant="53" id="G69-Ac-mQb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PKd-Z2-Mhl">
+                        <rect key="frame" x="27" y="72" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="FUZ-no-N8L"/>
+                            <constraint firstAttribute="width" constant="20" id="VfB-eG-62z"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.99993366003036499" green="1" blue="0.99988192319869995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W7h-5F-DrN">
+                        <rect key="frame" x="55" y="72" width="230" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="230" id="JIV-ry-BHG"/>
+                            <constraint firstAttribute="height" constant="21" id="P6L-pV-3qa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bue-hl-fVt">
+                        <rect key="frame" x="287" y="70" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="QnH-UB-IM5"/>
+                            <constraint firstAttribute="width" constant="25" id="teE-fg-emg"/>
+                        </constraints>
+                        <state key="normal" image="vip_sexUnselected"/>
+                        <state key="selected" image="mycollection_dele_sel"/>
+                        <connections>
+                            <action selector="senAc:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="F5Q-av-Bas"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="slm-4D-387" firstAttribute="leading" secondItem="PKd-Z2-Mhl" secondAttribute="trailing" constant="-24" id="2mo-gU-4lr"/>
+                    <constraint firstItem="W7h-5F-DrN" firstAttribute="leading" secondItem="slm-4D-387" secondAttribute="trailing" constant="4" id="7Bd-ZD-9RW"/>
+                    <constraint firstAttribute="bottom" secondItem="W7h-5F-DrN" secondAttribute="bottom" constant="7" id="ITP-Lj-rA6"/>
+                    <constraint firstAttribute="bottom" secondItem="slm-4D-387" secondAttribute="bottom" constant="3.5" id="Ivz-yd-tNy"/>
+                    <constraint firstItem="slm-4D-387" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="23" id="LD5-mu-Szb"/>
+                    <constraint firstItem="slm-4D-387" firstAttribute="top" secondItem="1I9-ca-KHu" secondAttribute="bottom" constant="11" id="T3B-64-AcP"/>
+                    <constraint firstAttribute="trailing" secondItem="Bue-hl-fVt" secondAttribute="trailing" constant="8" id="VhC-cd-s0j"/>
+                    <constraint firstItem="1I9-ca-KHu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="28" id="awf-sj-AuZ"/>
+                    <constraint firstItem="PKd-Z2-Mhl" firstAttribute="top" secondItem="slm-4D-387" secondAttribute="bottom" constant="-24" id="fgb-BV-660"/>
+                    <constraint firstAttribute="bottom" secondItem="Bue-hl-fVt" secondAttribute="bottom" constant="4" id="rbf-Mf-YCH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="SelButton" destination="Bue-hl-fVt" id="Kcr-qb-tq2"/>
+                <outlet property="line" destination="1I9-ca-KHu" id="3g5-OZ-dm3"/>
+                <outlet property="stepBg" destination="slm-4D-387" id="fkQ-ZO-x6v"/>
+                <outlet property="stepDes" destination="W7h-5F-DrN" id="LLN-Je-lh5"/>
+                <outlet property="stepNum" destination="PKd-Z2-Mhl" id="bFK-dc-pUt"/>
+            </connections>
+            <point key="canvasLocation" x="-458" y="59"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="mycollection_dele_sel" width="20" height="20"/>
+        <image name="vip_sexUnselected" width="17" height="17"/>
+    </resources>
+</document>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="PhotoImgTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="149"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hUG-kf-1Ck">
+                        <rect key="frame" x="15" y="17" width="138" height="95"/>
+                        <color key="backgroundColor" red="0.61474609375" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="24e-SU-lNc">
+                        <rect key="frame" x="167" y="17" width="138" height="95"/>
+                        <color key="backgroundColor" red="0.70152452256944442" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="工作牌" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Wu-QU-E6R">
+                        <rect key="frame" x="214" y="124" width="52" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="5sM-gW-zKr"/>
+                            <constraint firstAttribute="width" constant="52" id="oK8-Q6-GkC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="医师资格证" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NYi-l0-Veq">
+                        <rect key="frame" x="41" y="124" width="87" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="q7W-nh-4Cp"/>
+                            <constraint firstAttribute="width" constant="87" id="zUG-jf-PRz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QSg-kS-G1O">
+                        <rect key="frame" x="143" y="3" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="5Ph-vL-7fJ"/>
+                            <constraint firstAttribute="width" constant="20" id="tyj-Qn-5Qy"/>
+                        </constraints>
+                        <state key="normal" image="profile_del"/>
+                        <connections>
+                            <action selector="delAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="xzP-WM-Jqb"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="urx-4u-QKS">
+                        <rect key="frame" x="298" y="3" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="UJs-Le-ns7"/>
+                            <constraint firstAttribute="height" constant="20" id="llM-jI-763"/>
+                        </constraints>
+                        <state key="normal" image="profile_del"/>
+                        <connections>
+                            <action selector="del2:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="623-ZF-f36"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="urx-4u-QKS" firstAttribute="leading" secondItem="24e-SU-lNc" secondAttribute="trailing" constant="-7" id="8BX-rX-SM7"/>
+                    <constraint firstItem="QSg-kS-G1O" firstAttribute="leading" secondItem="hUG-kf-1Ck" secondAttribute="trailing" constant="-10" id="9CS-ic-UlJ"/>
+                    <constraint firstAttribute="bottom" secondItem="6Wu-QU-E6R" secondAttribute="bottom" constant="5" id="AJT-r5-p4N"/>
+                    <constraint firstItem="hUG-kf-1Ck" firstAttribute="width" secondItem="24e-SU-lNc" secondAttribute="width" id="Cur-oh-zMY"/>
+                    <constraint firstAttribute="bottom" secondItem="NYi-l0-Veq" secondAttribute="bottom" constant="5" id="DDZ-0E-VSc"/>
+                    <constraint firstItem="hUG-kf-1Ck" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="9" id="E3L-n1-9Lf"/>
+                    <constraint firstItem="hUG-kf-1Ck" firstAttribute="top" secondItem="QSg-kS-G1O" secondAttribute="bottom" constant="-6" id="GQr-D1-cSy"/>
+                    <constraint firstItem="24e-SU-lNc" firstAttribute="leading" secondItem="hUG-kf-1Ck" secondAttribute="trailing" constant="14" id="MBu-zB-JTr"/>
+                    <constraint firstItem="hUG-kf-1Ck" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="QJA-Un-gDB"/>
+                    <constraint firstItem="24e-SU-lNc" firstAttribute="top" secondItem="urx-4u-QKS" secondAttribute="bottom" constant="-6" id="Sgs-WI-8bL"/>
+                    <constraint firstItem="NYi-l0-Veq" firstAttribute="top" secondItem="hUG-kf-1Ck" secondAttribute="bottom" constant="12" id="Vd9-j2-neh"/>
+                    <constraint firstItem="hUG-kf-1Ck" firstAttribute="height" secondItem="24e-SU-lNc" secondAttribute="height" id="Z87-Ox-5wa"/>
+                    <constraint firstItem="NYi-l0-Veq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="33" id="aHV-6u-hDz"/>
+                    <constraint firstItem="6Wu-QU-E6R" firstAttribute="top" secondItem="24e-SU-lNc" secondAttribute="bottom" constant="12" id="uUH-xd-HBR"/>
+                    <constraint firstAttribute="trailing" secondItem="6Wu-QU-E6R" secondAttribute="trailing" constant="54" id="vtn-of-7n5"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="24e-SU-lNc" secondAttribute="trailing" constant="7" id="xbl-Sl-MFP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="del1" destination="QSg-kS-G1O" id="ptg-Oz-wJ1"/>
+                <outlet property="del2" destination="urx-4u-QKS" id="AGe-sN-SUF"/>
+                <outlet property="firPth" destination="hUG-kf-1Ck" id="1Uv-qN-V2N"/>
+                <outlet property="sedPh" destination="24e-SU-lNc" id="IMp-VJ-akc"/>
+            </connections>
+            <point key="canvasLocation" x="-435" y="-53"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="profile_del" width="18" height="18"/>
+    </resources>
+</document>

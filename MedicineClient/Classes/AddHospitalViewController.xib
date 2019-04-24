@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddHospitalViewController">
+            <connections>
+                <outlet property="commit" destination="L3v-Fr-BeZ" id="exY-Mh-f8N"/>
+                <outlet property="hospitalTextField" destination="Bvk-4e-TS3" id="Nw0-TT-qEE"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L3v-Fr-BeZ">
+                    <rect key="frame" x="10" y="115" width="355" height="49"/>
+                    <color key="backgroundColor" red="0.37355500459671021" green="0.78423088788986206" blue="0.85229784250259399" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="49" id="pFn-e5-V6t"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="确定">
+                        <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="tosure:" destination="-1" eventType="touchUpInside" id="Wfw-KN-LYV"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入要添加的医院名称" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bvk-4e-TS3">
+                    <rect key="frame" x="10" y="37" width="355" height="40"/>
+                    <color key="backgroundColor" red="0.95675891637802124" green="0.95692259073257446" blue="0.95674854516983032" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Vmc-bt-mOP"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="0hw-JT-de3"/>
+                    </connections>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="L3v-Fr-BeZ" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="10" id="DVF-OK-a98"/>
+                <constraint firstItem="Bvk-4e-TS3" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="17" id="OUt-He-yvN"/>
+                <constraint firstItem="L3v-Fr-BeZ" firstAttribute="top" secondItem="Bvk-4e-TS3" secondAttribute="bottom" constant="38" id="c6a-X5-nIe"/>
+                <constraint firstItem="Bvk-4e-TS3" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="10" id="fmg-yI-lvP"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="L3v-Fr-BeZ" secondAttribute="trailing" constant="10" id="msJ-DI-WPi"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Bvk-4e-TS3" secondAttribute="trailing" constant="10" id="rQ2-DO-sdS"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="34.5" y="53.5"/>
+        </view>
+    </objects>
+</document>
